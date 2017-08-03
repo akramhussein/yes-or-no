@@ -31,7 +31,7 @@
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6OM-nB-Poc">
-                                <rect key="frame" x="0.0" y="20" width="375" height="333.5"/>
+                                <rect key="frame" x="0.0" y="20" width="375" height="313"/>
                                 <color key="backgroundColor" red="0.0" green="0.63529411759999999" blue="0.47843137250000001" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="100"/>
                                 <state key="normal" title="YES">
@@ -44,9 +44,9 @@
                             <constraint firstItem="YQn-s8-KFo" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="4mE-tq-xnL"/>
                             <constraint firstItem="YQn-s8-KFo" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.5" id="5TF-Xw-A8f"/>
                             <constraint firstItem="6OM-nB-Poc" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="Fcs-TT-OuB"/>
-                            <constraint firstItem="6OM-nB-Poc" firstAttribute="top" secondItem="Llm-lL-Icb" secondAttribute="bottom" id="JWC-k0-rSp"/>
+                            <constraint firstItem="6OM-nB-Poc" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" constant="20" id="JWC-k0-rSp"/>
+                            <constraint firstItem="YQn-s8-KFo" firstAttribute="top" secondItem="6OM-nB-Poc" secondAttribute="bottom" id="P17-Ij-PrH"/>
                             <constraint firstItem="6OM-nB-Poc" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="XHa-Va-zW9"/>
-                            <constraint firstItem="6OM-nB-Poc" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" multiplier="0.5" id="fsO-kS-Jd4"/>
                             <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="YQn-s8-KFo" secondAttribute="bottom" id="h7y-BI-YMG"/>
                             <constraint firstItem="YQn-s8-KFo" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="uEB-Hq-Muu"/>
                         </constraints>
