@@ -30,7 +30,6 @@ class ViewController: UIViewController {
     var synth : AVSpeechSynthesizer! {
         didSet {
             self.synth!.pauseSpeaking(at: .word)
-            self.synth!.delegate = self
         }
     }
     
@@ -50,8 +49,4 @@ class ViewController: UIViewController {
     @IBAction func noButtonPressed(_ sender: UIButton) {
         self.synth.speak("NO")
     }
-}
-
-extension ViewController : AVSpeechSynthesizerDelegate {
-    func speechSynthesizer(_ synthesizer: AVSpeechSynthesizer, didFinish utterance: AVSpeechUtterance) {}
 }
