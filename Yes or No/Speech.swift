@@ -9,18 +9,14 @@
 import Foundation
 import AVFoundation
 
-extension AVSpeechSynthesizer
-{
-    func speak(_ string: String)
-    {
+extension AVSpeechSynthesizer {
+    func speak(_ string: String) {
         let utterance = AVSpeechUtterance(string: string)
         // HAX: Fix iOS 8 bug
-        if #available(iOS 9.0, *)
-        {
+        if #available(iOS 9.0, *) {
             // do nothing
         }
-        else
-        {
+        else {
             utterance.rate = 0.10
         }
         utterance.voice = AVSpeechSynthesisVoice(language: "en-us")
