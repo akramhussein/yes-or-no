@@ -13,3 +13,7 @@ Searching the app store for AAC will surface a number of more sophisticated comm
 Advice on how to access help and support to use digital communication aids can be found from Communication Matters:
 
 [http://www.communicationmatters.org.uk/](http://www.communicationmatters.org.uk/)
+
+## Screenshot
+
+<img src="assets/screenshot.png" width="200">
