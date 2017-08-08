@@ -1,0 +1,24 @@
+fastlane_version "2.27.0"
+
+default_platform :ios
+
+platform :ios do
+  desc "Submit a new Beta Build to Apple TestFlight"
+  desc "This will also make sure the profile is up to date"
+  lane :beta do
+    cert
+    sigh(platform: 'tvos')
+    gym(scheme: "MSE Genie TV",
+        include_bitcode: true)
+    testflight
+  end
+
+  desc "Deploy a new version to the App Store"
+  lane :release do
+    # match(type: "appstore")
+    # snapshot
+    gym(scheme: "MSE Genie TV") # Build your app - more options available
+    deliver(force: true)
+    # frameit
+  end
+end

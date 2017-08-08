@@ -1,0 +1,10 @@
+scheme "Yes or No"
+configuration "Release"
+
+include_bitcode 'true'
+include_symbols 'true'
+
+clean true
+
+output_directory "./fastlane/builds"
+output_name "YesOrNo"

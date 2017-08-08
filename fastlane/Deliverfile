@@ -1,0 +1,4 @@
+app_identifier "com.RAA.Yes-or-No" # The bundle identifier of your app
+username "rossjatkin@gmail.com" # your Apple ID user
+
+price_tier 0
