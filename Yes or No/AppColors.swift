@@ -10,14 +10,14 @@ import UIKit
 
 extension UIColor {
     public class var appGreen : UIColor {
-        return UIColor(colorLiteralRed: 0.0, green: 162.0 / 255.0, blue: 122.0 / 255.0, alpha: 1.0) // 0 162 122
+        return UIColor(red: 0.0, green: 162.0 / 255.0, blue: 122.0 / 255.0, alpha: 1.0) // 0 162 122
     }
     
     public class var appRed : UIColor {
-        return UIColor(colorLiteralRed: 195 / 255.0, green: 0.0, blue: 0.0, alpha: 1.0) // 195 0 0
+        return UIColor(red: 195 / 255.0, green: 0.0, blue: 0.0, alpha: 1.0) // 195 0 0
     }
     
     public class var appTextColor : UIColor {
-        return UIColor(colorLiteralRed: 245.0 / 255.0, green: 245 / 255.0, blue: 232 / 255.0, alpha: 1.0)// 245 245 232
+        return UIColor(red: 245.0 / 255.0, green: 245 / 255.0, blue: 232 / 255.0, alpha: 1.0)// 245 245 232
     }
 }

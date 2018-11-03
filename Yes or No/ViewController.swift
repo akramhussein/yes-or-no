@@ -13,6 +13,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var yesButton: UIButton! {
         didSet {
+            self.yesButton.setTitle("yes".localized.uppercased(), for: .normal)
             self.yesButton.setTitleColor(.appTextColor, for: .normal)
             self.yesButton.backgroundColor = .appGreen
         }
@@ -20,6 +21,7 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var noButton: UIButton! {
         didSet {
+            self.noButton.setTitle("no".localized.uppercased(), for: .normal)
             self.noButton.setTitleColor(.appTextColor, for: .normal)
             self.noButton.backgroundColor = .appRed
         }
@@ -43,10 +45,10 @@ class ViewController: UIViewController {
     // MARK: UI Actions
     
     @IBAction func yesButtonPressed(_ sender: UIButton) {
-        self.synth.speak("YES")
+        self.synth.speak("yes".localized.uppercased())
     }
     
     @IBAction func noButtonPressed(_ sender: UIButton) {
-        self.synth.speak("NO")
+        self.synth.speak("no".localized.uppercased())
     }
 }
